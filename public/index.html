@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rl Chat | Chatting Made Real</title>
+  </head>
+  <body>
+    <div class="join-container">
+      <header class="join-header">
+        <h1><i class="fab fa-gripfire"></i> RL Chat</h1>
+      </header>
+      <main class="join-main">
+        <form action="chat.html" autocomplete="off">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter username..."
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="room">Room</label>
+            <input name="room" id="room" placeholder="Room id or Name" />
+          </div>
+          <button type="submit" class="btn" id="submit">Join Chat</button>
+        </form>
+      </main>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+  <script>
+    let room = document.querySelector("#room");
+    room.setAttribute("value", uuidv4());
+    room.select();
+    room.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    setTimeout(() => {
+      alert("Room id copied to clipboard: " + room.value);
+    }, 1000);
+    let name = document.getElementById("username");
+    document.getElementById("submit").addEventListener("click", (e) => {
+      if (
+        name.value === "Rl Chat" ||
+        name.value === "Admin" ||
+        anme.value === "rl chat" ||
+        name.value === "admin" ||
+        name.value === "Rl chat"
+      ) {
+        e.preventDefault();
+        alert(
+          `You cannot Enter this username ${name.value} , pick another one`
+        );
+      }
+    });
+  </script>
+</html>
