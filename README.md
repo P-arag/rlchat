@@ -6,7 +6,7 @@ A realtime chat app with node.js
 3. Private Chat roomns
 4. Instant messaging
 ### Made using 
-i. Socket.io
-ii. Express.js
-iii. Moment.js
-## Hope you like it, the link to the heroku app will be sent shortly
+1. Socket.io
+2. Express.js
+3. Moment.js
+## Hope you like it, the link to the heroku app is [here](https://rlchat.herokuapp.com)
