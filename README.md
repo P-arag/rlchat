@@ -1,4 +1,4 @@
-# rlchat
+# Rl Chat
 A realtime chat app with node.js 
 ## This is a chat app with the following features
 1. Uuid encrypted
